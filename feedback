@@ -1,0 +1,19 @@
+def ask_for_review(customer_name):
+    print(f"Dear {customer_name}, thank you for your payment. We value your feedback!")
+
+    # Prompt for the review
+    review = input("Please share your experience with our services: ")
+
+    # Process the review (you can customize this part based on your needs)
+    if len(review) > 0:
+        print("Thank you for your review! We appreciate your feedback.")
+        # You can save the review to a file, database, or take further action here
+    else:
+        print("Thank you for your payment. We hope you were satisfied with our services.")
+
+# Example usage
+customer_names = ["John Smith", "Jane Doe", "Sam Johnson"]
+
+for customer_name in customer_names:
+    ask_for_review(customer_name)
+    print("\n")
